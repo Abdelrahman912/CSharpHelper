@@ -4,6 +4,9 @@ namespace CSharpHelper.Extensions
 {
     public static class DoubleExtension
     {
+        public static int GetIntHash(this double num) =>
+            ((int)num).GetHashCode();
+
         public static double IfNegativeReturnOne(this double num) =>
             num < 0 ? 1 : num;
 
