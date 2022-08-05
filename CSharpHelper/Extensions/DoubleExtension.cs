@@ -4,6 +4,10 @@ namespace CSharpHelper.Extensions
 {
     public static class DoubleExtension
     {
+
+        public static double ToDegree(this double radians) =>
+            radians * (180 / Math.PI);
+
         public static int GetIntHash(this double num) =>
             ((int)num).GetHashCode();
 
